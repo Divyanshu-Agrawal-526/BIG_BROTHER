@@ -17,7 +17,7 @@ st.info('Developed by Akshat Singh Jaiswal, Vyoman Jain, Aditya Naskar and Divya
 
 icon_size = 20
 
-st_button('webcam', 'https://youtube.com/dataprofessor', 'SACRED EYE DATA', icon_size)
+st_button('webcam', 'big_brother.csv', 'SACRED EYE DATA', icon_size)
 st_button('github', 'https://github.com/akshat-sj', 'Follow Akshat Singh Jaiswal on Github', icon_size)
 st_button('github', 'https://github.com/VyoJ', 'Follow Vyoman Jain on Github', icon_size)
 st_button('github', 'https://github.com/Divyanshu-Agrawal-526', 'Follow Divyanshu Agrawal on Github', icon_size)
