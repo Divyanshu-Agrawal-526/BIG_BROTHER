@@ -22,5 +22,5 @@ st_button('github', 'https://github.com/akshat-sj', 'Follow Akshat Singh Jaiswal
 st_button('github', 'https://github.com/VyoJ', 'Follow Vyoman Jain on Github', icon_size)
 st_button('github', 'https://github.com/Divyanshu-Agrawal-526', 'Follow Divyanshu Agrawal on Github', icon_size)
 st_button('github', 'https://github.com/N4SK4R', 'Follow Aditya Naskar on Github', icon_size)
-st_button('github', 'https://github.com/akshat-sj/big-brother', 'Follow BIG BROTHER on Github', icon_size)
+st_button('github', 'https://github.com/akshat-sj/big-brother', 'Follow BIG BROTHER SOURCE CODE on Github', icon_size)
 st_button('cup', 'https://www.buymeacoffee.com/dataprofessor/', 'Buy me a Coffee', icon_size)
