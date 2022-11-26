@@ -1,1 +1,0 @@
-SELECT * FROM big_brother
