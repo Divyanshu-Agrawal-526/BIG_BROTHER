@@ -11,7 +11,7 @@ col2.image(Image.open('dp.jpeg'))
 
 st.header('BIG BROTHER')
 
-st.info('SACRED EYE')
+st.header('SACRED EYE')
 
 icon_size = 20
 
