@@ -1,7 +1,6 @@
 import streamlit as st
 from st_functions import st_button, load_css
 from PIL import Image
-import mysql.connector
 
 load_css()
 
@@ -11,10 +10,10 @@ col1, col2, col3 = st.columns(3)
 col2.image(Image.open('dp.jpeg'))
 
 st.header('BIG BROTHER')
-icon_size = 20
+
 st.header('SACRED EYE')
           
-
+icon_size=20
 
 st.info('Developed by Akshat Singh Jaiswal, Vyoman Jain, Aditya Naskar and Divyanshu Agrawal')
 
