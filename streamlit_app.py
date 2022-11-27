@@ -24,23 +24,3 @@ st_button('github', 'https://github.com/VyoJ', 'Follow Vyoman Jain on Github', i
 st_button('github', 'https://github.com/Divyanshu-Agrawal-526', 'Follow Divyanshu Agrawal on Github', icon_size)
 st_button('github', 'https://github.com/N4SK4R', 'Follow Aditya Naskar on Github', icon_size)
 st_button('github', 'https://github.com/akshat-sj/big-brother', 'Follow BIG BROTHER SOURCE CODE on Github', icon_size)
-
-@st.experimental_singleton
-def init_connection():
-    return mysql.connector.connect(**st.secrets["mysql"])
-
-conn = init_connection()
-
-# Perform query.
-# Uses st.experimental_memo to only rerun when the query changes or after 10 min.
-@st.experimental_memo(ttl=600)
-def run_query(query):
-    with conn.cursor() as cur:
-        cur.execute(query)
-        return cur.fetchall()
-
-rows = run_query("SELECT * from user_table;")
-
-# Print results.
-for row in rows:
-    st.write(f"{row[0]} has a :{row[1]}:")
