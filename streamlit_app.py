@@ -25,6 +25,7 @@ st_button('github', 'https://github.com/Divyanshu-Agrawal-526', 'Follow Divyansh
 st_button('github', 'https://github.com/N4SK4R', 'Follow Aditya Naskar on Github', icon_size)
 st_button('github', 'https://github.com/akshat-sj/big-brother', 'Follow BIG BROTHER SOURCE CODE on Github', icon_size)
 st_button('cup', 'https://www.buymeacoffee.com/dataprofessor/', 'Buy me a Coffee', icon_size)
+
 @st.experimental_singleton
 def init_connection():
     return mysql.connector.connect(**st.secrets["mysql"])
@@ -39,7 +40,7 @@ def run_query(query):
         cur.execute(query)
         return cur.fetchall()
 
-rows = run_query("SELECT * from mytable;")
+rows = run_query("SELECT * from user_table;")
 
 # Print results.
 for row in rows:
